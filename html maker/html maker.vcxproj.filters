@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\TestPages">
+      <UniqueIdentifier>{64eddc1b-5ec3-48af-b4fe-f3645da149af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -24,10 +27,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="index.html">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\TestPages</Filter>
     </None>
     <None Include="StyleSheet.css">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\TestPages</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
