@@ -1,7 +1,7 @@
 #include "ToHtml.h"
 #include "windows.h"
 
-void toHtml(string path, string filename, vector<string> links, vector<string> data)
+void toHtml(string path, string filename, vector<string> styleSheets, vector<string> links, vector<string> data)
 {
 	fstream file;
 	file.open(path + "\\" + filename + ".html", fstream::out, fstream::trunc);
@@ -11,7 +11,12 @@ void toHtml(string path, string filename, vector<string> links, vector<string> d
 			<< "<HTML>\n"
 			<< "<HEAD>\n"
 			<< "<META NAME = \"GENERATOR\" Content = \"Microsoft  Visual Studio\">\n"
-			<< "<TITLE>" + filename + "</TITLE>\n"
+			<< "<TITLE>" + filename + "</TITLE>\n";
+
+		for (size_t i = 0; i < styleSheets.size(); i++)
+			file << "<LINK rel = \"stylesheet\" type = \"text/css\" href = \"" << path + "\\" + styleSheets[i] + ".css" << "\">\n";
+
+		file
 			<< "</HEAD>\n"
 			<< "<BODY>\n"
 			<< "\n"
@@ -31,3 +36,6 @@ void toHtml(string path, string filename, vector<string> links, vector<string> d
 		file.close();
 	}
 }
+
+void toCss(string path, string filename, vector<string> data)
+{}

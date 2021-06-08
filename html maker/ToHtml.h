@@ -7,4 +7,6 @@
 
 using namespace std;
 
-void toHtml(string path, string filename, vector<string> links, vector<string> data);
+void toHtml(string path, string filename, vector<string> styleSheets, vector<string> links, vector<string> data);
+
+void toCss(string path, string filename, vector<string> data);

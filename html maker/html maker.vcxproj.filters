@@ -26,6 +26,9 @@
     <None Include="index.html">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="StyleSheet.css">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ToHtml.h">

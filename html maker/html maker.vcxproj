@@ -146,6 +146,7 @@
     <None Include="index.html">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="StyleSheet.css" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ToHtml.h" />
